@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open New File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Open New File on GitHub</h1>
+    <p>Click the button below to open a new file in the GitHub repository:</p>
+    <button onclick="openGitHubFile()">Open New File</button>
+
+    <script>
+        function openGitHubFile() {
+            var repositoryUrl = 'https://github.com/your_username/your_repository_name/new/main';
+            window.open(repositoryUrl);
+        }
+    </script>
+</body>
+</html>
